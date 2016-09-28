@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//backend/models.py=utf-8
+encoding//backend/sqlhelper.py=utf-8
+encoding/client.py=GBK
+encoding/server.py=utf-8
