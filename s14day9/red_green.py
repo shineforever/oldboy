@@ -4,6 +4,8 @@
 红绿灯example,红灯,车子停,绿灯,车行!
 event.clear() 代表清空标志位,代表红灯;
 event.set() 代表设置标志位,代表绿灯;
+event.is_set() 判断是否有标志位;
+event.wait() 等待标志位
 thread 看见标志位才有有动作,否在wait;
 """
 
@@ -18,7 +20,7 @@ def lighter():
     :return:
     """
     count = 0
-    event.set() #默认位绿灯
+    event.set()    #默认位绿灯
     while True:
         if count > 5 and count < 10:  #红灯(亮10s),清空标志位
             lighter = event.clear()
