@@ -9,7 +9,7 @@ import threading
 import time
 
 def run(n):
-    print("task: ",n,threading.current_thread())  #查看每个thread的id
+    print("task: ",n,threading.current_thread(),threading.active_count())  #查看每个thread的id
     time.sleep(2)
 
 
