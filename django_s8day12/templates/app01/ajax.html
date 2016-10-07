@@ -17,6 +17,8 @@
                 type:'POST',
                 data:{dat:temp},
                 success:function(arg){
+                    var obj = jQuery.parseJSON(arg);  //获取传来得msg,装换后,jquery才能识别;
+                    console.log(obj.status);  //获取传来的json格式中指定字段;
                     console.log(arg)   //打印从服务端接受到得信息;
                     console.log('success');
                 },
