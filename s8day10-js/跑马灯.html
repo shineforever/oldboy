@@ -1,0 +1,19 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>欢迎各位,欢迎大家莅临!</title>
+    <script type="text/javascript">
+        function Go(){
+            var content = document.title;
+            var firstChar = content.charAt(0) //文本第一个字,例如是"欢迎",第一个字符就是"欢"
+            var sub = content.substring(1,content.length) //找到从第二个字符到最后的字符;
+            document.title = sub + firstChar; //找得到从第二个字到最后字组成的list + 第一个字,不停轮询;
+        }
+        setInterval('Go()',1000)
+    </script>
+</head>
+<body>
+
+</body>
+</html>
