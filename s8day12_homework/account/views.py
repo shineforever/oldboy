@@ -1,6 +1,7 @@
 #! /usr/bin/env python
 # coding: utf-8
 from django.shortcuts import render,render_to_response,HttpResponse,redirect
+from django.template import RequestContext  #使用csrf功能时要import
 from models import *
 import json
 
@@ -29,9 +30,9 @@ def login(request):
             return redirect('/account/login_after')    #重定向到另外一个页面
         else:
             print(request.session)
-            return render_to_response('account/login.html',{'msg':'用户名或者密码错误！'})
+            return render_to_response('account/login.html',{'msg':'用户名或者密码错误！'},context_instance=RequestContext(request))
     else:
-        return render_to_response('account/login.html')
+        return render_to_response('account/login.html',context_instance=RequestContext(request))
 
 def login_after(request):
     user_dict = request.session.get('is_login',None)

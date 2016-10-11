@@ -43,7 +43,7 @@ INSTALLED_APPS = (
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    # 'django.middleware.csrf.CsrfViewMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -77,8 +77,8 @@ WSGI_APPLICATION = 's8day12_homework.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST': '192.168.2.42',
-        'PORT': 33066,
+        'HOST': '127.0.0.1',
+        'PORT': 3306,
         'NAME': 's8day12_homework',
         'USER': 'root',
         'PASSWORD': '123456',
