@@ -13,4 +13,5 @@ urlpatterns = [
     url(r'^login/$', views.login),
     url(r'^logout/$', views.logout),
     url(r'^login_after/$', views.login_after),
+     url(r'^login_no_csrf/$', views.login_no_csrf),
 ]

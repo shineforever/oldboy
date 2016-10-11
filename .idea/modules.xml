@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../csmp/.idea/csmp.iml" filepath="$PROJECT_DIR$/../csmp/.idea/csmp.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/oldboy.iml" filepath="$PROJECT_DIR$/.idea/oldboy.iml" />
       <module fileurl="file://$PROJECT_DIR$/../pyTools/.idea/pyTools.iml" filepath="$PROJECT_DIR$/../pyTools/.idea/pyTools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../py_practice/.idea/py_practice.iml" filepath="$PROJECT_DIR$/../py_practice/.idea/py_practice.iml" />
     </modules>
   </component>
 </project>

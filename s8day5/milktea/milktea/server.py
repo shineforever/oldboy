@@ -39,7 +39,7 @@ class  MyServer(SocketServer.BaseRequestHandler):
                         rev_data['key'] = re
                         rev_data['data'] = '约吗？'
                     else:
-                        rev_data['data'] = 'failed.'
+                        rev_data['data'] = ' username or passwd auth failed.'
                     conn.sendall(json.dumps(rev_data))
                 #用户已经登录
                 else:

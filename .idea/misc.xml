@@ -17,4 +17,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Remote Python 2.7.12 Vagrant VM at D:/py_2.7 (/webser/pyenv/shims/python)" project-jdk-type="Python SDK" />
+  <component name="SvnBranchConfigurationManager">
+    <option name="mySupportsUserInfoFilter" value="true" />
+  </component>
 </project>

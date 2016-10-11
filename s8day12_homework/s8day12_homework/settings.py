@@ -49,6 +49,8 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'oldboy.mymiddleware.Day13Middleware',
+    'oldboy.mymiddleware.Day13Middleware2',
 )
 
 ROOT_URLCONF = 's8day12_homework.urls'
@@ -77,8 +79,8 @@ WSGI_APPLICATION = 's8day12_homework.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST': '127.0.0.1',
-        'PORT': 3306,
+        'HOST': '192.168.2.42',
+        'PORT': 33066,
         'NAME': 's8day12_homework',
         'USER': 'root',
         'PASSWORD': '123456',
