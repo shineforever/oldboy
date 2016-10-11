@@ -26,7 +26,8 @@ def login(request):
         username = request.POST.get('username',None)
         password = request.POST.get('password',None)
         # print(username,password)
-        if username == 'abc'and password == 'abc':
+        is_check = UserInfo.objects.filter(username=username,password=password).count()
+        if is_check:
             # pass
             request.session['is_login'] = {'user':username}   #设置session
             return redirect('/account/login_after')    #重定向到另外一个页面

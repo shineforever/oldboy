@@ -1,9 +1,16 @@
+#! /usr/bin/env python
+# coding: utf-8
+
 from django.db import models
 
 # Create your models here.
 
 class UserType(models.Model):
     name = models.CharField(max_length=50)
+
+    class Meta:
+        verbose_name = '用户类型'            #点击admin首页相关字段进去后的页面显示，例如：
+        verbose_name_plural = "用户类型"    #admin后台首页字段汉字显示；
 
 class UserInfo(models.Model):
     username = models.CharField(max_length=50)
